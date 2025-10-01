@@ -3,6 +3,7 @@ pypdf
 openai
 langchain
 langchain-community
+langchain-openai
 pandas
 numpy
 python-dotenv
