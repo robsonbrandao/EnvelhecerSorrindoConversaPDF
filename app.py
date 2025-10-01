@@ -17,7 +17,12 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 # Configurações básicas
 # -------------------------------------------------------------------
 st.set_page_config(page_title="Chat com PDFs 📚🤖", layout="centered")
-st.title("🤖 Converse com os PDFs do Envelhecer Sorrindo")
+#st.title("🤖 Converse com os PDFs do Envelhecer Sorrindo")
+
+st.markdown(
+    "<h2 style='text-align: center;'>✨ Explore as histórias e conhecimentos do <b>Envelhecer Sorrindo</b> ✨</h2>",
+    unsafe_allow_html=True
+)
 
 
 # Título principal
