@@ -17,8 +17,8 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 # Configurações básicas
 # -------------------------------------------------------------------
 st.set_page_config(page_title="Chat com PDFs 📚🤖", layout="centered")
-st.title("🤖 Converse com os PDFs do Envelhecer sorrindo")
-st.markdown("Faça perguntas com base no conteúdo dos documentos da pasta `/fo`.")
+st.title("🤖 Converse com os PDFs do Envelhecer Sorrindo")
+
 
 # Título principal
 st.image("logo_Insiders.png")
