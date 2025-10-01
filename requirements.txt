@@ -7,3 +7,9 @@ pandas
 numpy
 python-dotenv
 tiktoken
+streamlit
+pypdf
+sentence-transformers
+# LangChain stack
+langchain-openai
+faiss-cpu
