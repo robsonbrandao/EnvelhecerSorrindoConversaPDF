@@ -1,0 +1,53 @@
+# Arquivo de variáveis de ambiente
+.env
+*.env
+
+# Cache e metadados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Diretórios de build/distribuição
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Arquivos PDFs e Chromadb
+fo/          # pasta de PDFs
+chroma_db/   # índice do Chroma
+*.bin
+*.pdf
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Arquivos de log
+*.log
+
+# Configurações locais/temporárias
+*.DS_Store
+*.swp
+*.swo
+
+# Cache do Jupyter Notebook
+.ipynb_checkpoints
+
+# Cache do Streamlit
+.streamlit/
+
+# Arquivos de testes/coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.iml
+
+# Arquivos temporários do sistema
+Thumbs.db
