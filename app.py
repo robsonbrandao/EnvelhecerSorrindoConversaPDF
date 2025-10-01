@@ -11,6 +11,31 @@ from dotenv import load_dotenv
 import warnings
 warnings.filterwarnings("ignore")
 
+from pathlib import Path
+import streamlit as st
+from src.ingest import build_or_update_vectorstore
+
+PDF_DIR = Path("fo")
+CHROMA_DIR = Path("chroma_db")
+
+if not CHROMA_DIR.exists() or not any(CHROMA_DIR.iterdir()):
+    st.info("ChromaDB não encontrado. Construindo a partir dos PDFs...")
+    vectordb = build_or_update_vectorstore(PDF_DIR, CHROMA_DIR)
+else:
+    st.success("ChromaDB já existe. Pronto para usar!")
+
+
+
+from pathlib import Path
+from src.ingest import build_or_update_vectorstore
+
+CHROMA_DIR = Path("chroma_db")
+PDF_DIR = Path("fo")
+
+if not CHROMA_DIR.exists() or not any(CHROMA_DIR.iterdir()):
+    st.info("Inicializando índice (ChromaDB) a partir dos PDFs...")
+    build_or_update_vectorstore(pdf_dir=PDF_DIR, chroma_dir=CHROMA_DIR)
+
 
 # Carrega variáveis de ambiente do .env
 load_dotenv()
