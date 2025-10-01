@@ -14,10 +14,10 @@ dist/
 *.egg-info/
 
 # Arquivos PDFs e Chromadb
-fo/          # pasta de PDFs
+#fo/          # pasta de PDFs
 chroma_db/   # índice do Chroma
 *.bin
-*.pdf
+#*.pdf
 
 # Virtual environments
 .venv/
